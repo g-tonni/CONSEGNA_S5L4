@@ -4,6 +4,16 @@ h3 {
   margin: 0;
 }
 
+@keyframes caduta {
+  0%,
+  30% {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
 body {
   background-color: rgb(66, 66, 66);
   font-family: 'Indie Flower', cursive;
@@ -78,34 +88,42 @@ p {
 .postit:nth-of-type(1) {
   transform: rotate(-5deg);
   z-index: 0;
+  animation: caduta 600ms ease-out 1.8s backwards;
 }
 .postit:nth-of-type(2) {
   transform: rotate(5deg);
   z-index: 0;
+  animation: caduta 600ms ease-out 550ms backwards;
 }
 .postit:nth-of-type(3) {
   transform: rotate(-7deg);
   z-index: 0;
+  animation: caduta 600ms ease-out 1s backwards;
 }
 .postit:nth-of-type(4) {
   transform: rotate(7deg) translateY(-10px);
   z-index: 0;
+  animation: caduta 600ms ease-out 1.2s backwards;
 }
 .postit:nth-of-type(5) {
   transform: rotate(-3deg);
   z-index: 0;
+  animation: caduta 600ms ease-out 200ms backwards;
 }
 .postit:nth-of-type(6) {
   transform: rotate(-7deg);
   z-index: 0;
+  animation: caduta 600ms ease-out 1.6s backwards;
 }
 .postit:nth-of-type(7) {
   transform: rotate(-5deg) translateY(8px);
   z-index: 0;
+  animation: caduta 600ms ease-out 800ms backwards;
 }
 .postit:nth-of-type(8) {
   transform: rotate(5deg) translate(5px, 15px);
   z-index: 0;
+  animation: caduta 600ms ease-out 300ms backwards;
 }
 
 .postit:hover {
