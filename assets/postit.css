@@ -1,0 +1,114 @@
+body,
+p,
+h3 {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(66, 66, 66);
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+.postit {
+  padding: 70px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 6px 12px 6px -3px rgba(0, 0, 0, 0.6);
+  transition: all 200ms ease-out 0s;
+}
+
+.yellow {
+  background: linear-gradient(
+    0deg,
+    hsla(61, 83%, 88%, 1) 0%,
+    hsla(62, 47%, 85%, 1) 4%,
+    hsla(62, 36%, 78%, 1) 8%,
+    hsla(60, 23%, 77%, 1) 13%,
+    hsla(61, 83%, 88%, 1) 39%
+  );
+}
+
+.green {
+  background: linear-gradient(
+    0deg,
+    hsla(121, 77%, 88%, 1) 0%,
+    hsla(122, 42%, 85%, 1) 4%,
+    hsla(120, 26%, 83%, 1) 8%,
+    hsla(120, 27%, 80%, 1) 13%,
+    hsla(121, 77%, 88%, 1) 39%
+  );
+}
+
+.purple {
+  background: linear-gradient(
+    0deg,
+    hsla(240, 58%, 86%, 1) 0%,
+    hsla(240, 33%, 80%, 1) 4%,
+    hsla(240, 28%, 76%, 1) 8%,
+    hsla(240, 28%, 75%, 1) 13%,
+    hsla(240, 58%, 86%, 1) 39%
+  );
+}
+
+.postit:nth-of-type(1) {
+  transform: rotate(-5deg);
+  z-index: 0;
+}
+.postit:nth-of-type(2) {
+  transform: rotate(5deg);
+  z-index: 0;
+}
+.postit:nth-of-type(3) {
+  transform: rotate(-7deg);
+  z-index: 0;
+}
+.postit:nth-of-type(4) {
+  transform: rotate(7deg) translateY(-10px);
+  z-index: 0;
+}
+.postit:nth-of-type(5) {
+  transform: rotate(-3deg);
+  z-index: 0;
+}
+.postit:nth-of-type(6) {
+  transform: rotate(-7deg);
+  z-index: 0;
+}
+.postit:nth-of-type(7) {
+  transform: rotate(-5deg) translateY(8px);
+  z-index: 0;
+}
+.postit:nth-of-type(8) {
+  transform: rotate(5deg) translate(5px, 15px);
+  z-index: 0;
+}
+
+.postit:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}
